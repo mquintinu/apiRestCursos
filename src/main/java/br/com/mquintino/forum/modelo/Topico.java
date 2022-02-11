@@ -15,6 +15,16 @@ import javax.persistence.OneToMany;
 
 @Entity
 public class Topico {
+		
+	public Topico() {	}
+
+	public Topico(String titulo, String mensagem, Curso curso) {
+		super();
+		this.titulo = titulo;
+		this.mensagem = mensagem;
+		this.curso = curso;
+	}
+
 
 	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
