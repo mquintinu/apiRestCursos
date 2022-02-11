@@ -26,9 +26,7 @@ public class TopicosController {
 		{
 			List<Topico> topicos = topicoRepository.findByCurso_Nome(nomeCurso);
 			return TopicoDto.converter(topicos);
-		}
-			
-		
+		}				
 	}
 	
 	
